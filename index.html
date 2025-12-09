@@ -1,4 +1,4 @@
-<!doctype html> 
+<!doctype html>
 <html lang="en">
 
 <head>
@@ -8,19 +8,17 @@
   <title>Jobify</title>
 </head>
 
-<body class="bg-gray-100 ">
-  <header class="bg-white flex px-20 py-5">
-    <div class="container flex  justify-between items-center mx-auto  ">
+<body class="bg-gray-100">
+  <header class="bg-white p-5">
+    <div class=" hidden md:flex ">
       <div class="flex space-x-5 items-center flex-1">
-        <div>
-          <!-- <img src="./Asset/linkedin.svg" class="w-8" /> -->
-           <img src="./Asset/images.png" class="w-8"/>
+        <div class="w-8 text-black">
+          <img src="./Asset/images.png" />
         </div>
         <div class=" flex flex-1">
           <div class="border flex items-center px-2 rounded-full">
             <div>
-              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-                viewBox="0 0 24 24">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
                 <path fill="currentColor"
                   d="m19.6 21l-6.3-6.3q-.75.6-1.725.95T9.5 16q-2.725 0-4.612-1.888T3 9.5t1.888-4.612T9.5 3t4.613 1.888T16 9.5q0 1.1-.35 2.075T14.7 13.3l6.3 6.3zM9.5 14q1.875 0 3.188-1.312T14 9.5t-1.312-3.187T9.5 5T6.313 6.313T5 9.5t1.313 3.188T9.5 14" />
               </svg>
@@ -29,9 +27,9 @@
               class=" border-none px-3 py-1 rounded-full outline-none w-90 justify-content-between">
           </div>
 
-        </div>  
+        </div>
       </div>
-      <div class="flex space-x-5 items-center">
+      <div class="flex space-x-5 ">
         <div class="home flex flex-col items-center group">
           <div class="text-gray-500 group-hover:underline group-hover:text-sky-700">
             <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
@@ -154,7 +152,149 @@
         </div>
       </div>
     </div>
+    <div class="md:hidden relative flex  justify-between">
+      <div class="w-8 text-black">
+          <img src="./Asset/images.png" />
+        </div>
+      <input type="checkbox" id="menu-toggle" class=" peer hidden">
+        <label for="menu-toggle" class="cursor-pointer">
+          <div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
+              <path fill="currentColor" d="M3 18h18v-2H3zm0-5h18v-2H3zm0-7v2h18V6z" />
+            </svg>
+          </div>
+          
+        </label>
+        <ul class="absolute hidden peer-checked:block left-0 top-12 bg-white w-full shadow-lg p-4 space-y-3 mx-auto" >
+            <li class="py-1 bg-blue-100  rounded boxshadow-lg flex justify-center">
+              <a> Home</a>
+            </li>
+            <li class="py-1 bg-blue-100  rounded boxshadow-lg flex justify-center">
+              <a> Network</a>
+            </li>
+            <li class="py-1 bg-blue-100  rounded boxshadow-lg flex justify-center">
+              <a> Jobs</a>
+            </li>
+            <li class="py-1 bg-blue-100  rounded boxshadow-lg flex justify-center">
+              <a>Message </a>
+            </li>
+            <li class="py-1 bg-blue-100  rounded boxshadow-lg flex justify-center">
+              <a>Notification </a>
+            </li>
+            <li class="py-1 bg-blue-100  rounded boxshadow-lg flex justify-center">
+              <a>Profile</a>
+            </li>
+            <li class="py-1 bg-blue-100  rounded boxshadow-lg flex justify-center">
+              <a> For buisness</a>
+            </li>
+            <li class="py-1 bg-blue-100  rounded boxshadow-lg flex justify-center">
+              <a>premium</a>
+            </li>
+          </ul>
+    </div>
   </header>
+  <div class="max-w-7xl mx-auto px-4 py-6 grid grid-cols-1 lg:grid-cols-4 gap-6">
+
+    <aside class="hidden lg:block col-span-1 space-y-4">
+      <div class="bg-white shadow rounded-lg p-4">
+        <div class="h-24 bg-cover rounded-lg" style="background-image:url('./Asset/profile\ background.jpg');"></div>
+        <div class="mt-4 text-center">
+          <img class="w-20 h-20 rounded-full mx-auto -mt-12 border-4 border-white"
+            src="./Asset/profile background.jpg" />
+          <h3 class="font-semibold text-lg mt-2">Your Name</h3>
+          <p class="text-sm text-gray-500">Frontend Developer</p>
+        </div>
+
+        <div class="border-t my-3"></div>
+
+        <div class="text-sm">
+          <div class="flex justify-between py-1">
+            <span class="text-gray-500">Profile views</span>
+            <span class="font-semibold">209</span>
+          </div>
+          <div class="flex justify-between py-1">
+            <span class="text-gray-500">Post impressions</span>
+            <span class="font-semibold">263</span>
+          </div>
+        </div>
+      </div>
+    </aside>
+
+    <main class="col-span-3 lg:col-span-2 space-y-4">
+
+      <div class="bg-white shadow rounded-lg p-4">
+        <input type="text" placeholder="Start a post..." class="w-full border border-gray-300 rounded-full px-4 py-2" />
+      </div>
+
+      <div class="bg-white shadow rounded-lg p-4">
+        <div class="flex items-center gap-3">
+          <img class="w-12 h-12 rounded-full" src="./Asset/profile background.jpg" />
+          <div>
+            <h4 class="font-semibold">Dharmendra Singh</h4>
+            <p class="text-xs text-gray-500">2d • Developer</p>
+          </div>
+        </div>
+
+        <p class="mt-3 text-gray-700">
+          Made my day…
+        </p>
+
+        <img src="./Asset/profile background.jpg" class="rounded-lg mt-3 w-full" />
+      </div>
+      <div class="bg-white shadow rounded-lg p-4">
+        <div class="flex items-center gap-3">
+          <img class="w-12 h-12 rounded-full" src="./Asset/profile background.jpg" />
+          <div>
+            <h4 class="font-semibold">Dharmendra Singh</h4>
+            <p class="text-xs text-gray-500">2d • Developer</p>
+          </div>
+        </div>
+
+        <p class="mt-3 text-gray-700">
+          About life…
+        </p>
+
+        <img src="./Asset/profile background.jpg" class="rounded-lg mt-3 w-full" />
+      </div>
+      <div class="bg-white shadow rounded-lg p-4">
+        <div class="flex items-center gap-3">
+          <img class="w-12 h-12 rounded-full" src="./Asset/profile background.jpg" />
+          <div>
+            <h4 class="font-semibold">Dharmendra Singh</h4>
+            <p class="text-xs text-gray-500">2d • Developer</p>
+          </div>
+        </div>
+
+        <p class="mt-3 text-gray-700">
+          Nature✨…
+        </p>
+
+        <img src="./Asset//profile background.jpg" class="rounded-lg mt-3 object-contain w-full" />
+      </div>
+
+    </main>
+
+    <aside class="hidden lg:block col-span-1">
+      <div class="bg-white shadow rounded-lg p-4">
+        <h3 class="font-semibold text-lg">News</h3>
+        <ul class="mt-3 space-y-3 text-sm">
+          <li class="border-b pb-2">
+            Tata, Intel sign new pact
+            <p class="text-gray-500 text-xs">9h ago • 495 readers</p>
+          </li>
+          <li class="border-b pb-2">
+            India Inc to ramp up hiring
+            <p class="text-gray-500 text-xs">7h ago • 353 readers</p>
+          </li>
+          <li>
+            UPI gets IMF accolade
+            <p class="text-gray-500 text-xs">3h ago</p>
+          </li>
+        </ul>
+      </div>
+    </aside>
+
+  </div>
 
 </body>
 
